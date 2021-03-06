@@ -30,7 +30,7 @@ const Tickets:React.FC = () => {
         let validTickets = [];
         let index = 0;
 
-        while(validTickets.length !== value) {
+        while(validTickets.length !== value && index < tickets.length) {
             if (checkTicket(filters, tickets[index])) {
                 validTickets.push(tickets[index]);
             }
